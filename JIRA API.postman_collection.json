@@ -1,0 +1,1439 @@
+{
+	"info": {
+		"_postman_id": "6bd20ad3-0731-4cfa-911b-413e63263ebc",
+		"name": "JIRA API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30331007"
+	},
+	"item": [
+		{
+			"name": "Response Code test",
+			"item": [
+				{
+					"name": "Get Project features 200 OK",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/10000/features",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"10000",
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project features 401 Authorization",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "sdfgd",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/10000/features",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"10000",
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project features 400 Bad Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true,
+							"user-agent": true,
+							"accept": true,
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/10000/features",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"10000",
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project features 400 Bad Request Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/10000/features",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"10000",
+								"features"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Validate Response JSON",
+			"item": [
+				{
+					"name": "Validate values and data types",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const responseJSON = pm.response.json();\r",
+									"pm.test(\"Validate JSON value in response\", function () {\r",
+									"    \r",
+									"\r",
+									"    // Validate the value of projectID\r",
+									"    pm.expect(responseJSON.features[0].projectId).to.eql(10000);});\r",
+									"    //Validate the data type of project id \r",
+									"pm.test(\"Validate data type of project id\", ()=>{\r",
+									"\r",
+									"\r",
+									"    pm.expect(responseJSON.features[0].projectId).to.be.a(\"number\");});\r",
+									"pm.test(\"Validate data type of state\", ()=>{\r",
+									"\r",
+									"\r",
+									"    pm.expect(responseJSON.features[0].state).to.be.a(\"string\");});\r",
+									"\r",
+									"\r",
+									"  \r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/10000/features",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"10000",
+								"features"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "End to End API testing",
+			"item": [
+				{
+					"name": "Get Projects Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//const response = pm.response.json();\r",
+									"//console.log(response.map((value) => value.name));\r",
+									"\r",
+									"\r",
+									"//console.log(response.values[0].id);\r",
+									"//pm.collectionVariables.set(\"ProjectID\", response.values[0].id)\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"//console.log(response.values);\r",
+									"let projectDetails = response.values;\r",
+									"const projectNames = projectDetails.map((projectname) => projectname.name);\r",
+									"console.log(projectNames)\r",
+									"//console.log(issuetypes.indexOf('Bug'));\r",
+									"\r",
+									"pm.collectionVariables.set('projectIDMap',projectDetails[projectNames.indexOf('My Kanban Project')].id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/project/search",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"project",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Issue types for the project Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//const issuetype = pm.response.json();\r",
+									"//console.log(issuetype.map((value) => value.name));\r",
+									"//console.log(issuetype[3].id)\r",
+									"//pm.collectionVariables.set('issuetypeID', issuetype[3].id);\r",
+									"/*for(i=0; i<issuetype.length; i++){\r",
+									"    if(issuetype[i].name == 'Task'){\r",
+									"        pm.collectionVariables.set('issueIDtype',issuetype[i].id)\r",
+									"\r",
+									"    }\r",
+									"    \r",
+									"}*/\r",
+									"issue = pm.response.json();\r",
+									"const issuetypes = issue.map((value) => value.name);\r",
+									"console.log(issuetypes)\r",
+									"console.log(issuetypes.indexOf('Bug'));\r",
+									"pm.collectionVariables.set('issueTypeIDMap',issue[issuetypes.indexOf('Bug')].id);\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/issuetype/project?projectId={{ProjectID}}",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"",
+								"rest",
+								"api",
+								"3",
+								"issuetype",
+								"project"
+							],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{ProjectID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users assignable to project Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//const userassignable = pm.response.json();\r",
+									"//console.log(userassignable)\r",
+									"//console.log(userassignable[0].accountId);\r",
+									"//pm.collectionVariables.set('userassignableID', userassignable[0].accountId);\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"let desiredValues = response.map((value) => value.displayName);\r",
+									"pm.collectionVariables.set('accountIDMap',response[desiredValues.indexOf('Shrikant Korate T_47')].accountId);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/user/assignable/multiProjectSearch?projectKeys=KAN",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"user",
+								"assignable",
+								"multiProjectSearch"
+							],
+							"query": [
+								{
+									"key": "projectKeys",
+									"value": "KAN"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create issue Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var title = pm.collectionVariables.replaceIn(\"{{$randomPhrase}}\");\r",
+									"pm.collectionVariables.set(\"issueTitle\",title);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();\r",
+									"pm.collectionVariables.set('createdissueID',response.id);\r",
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"    pm.response.to.be.success;\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fields\": {\r\n        \"issuetype\": {\r\n            \"id\": \"{{issueTypeIDMap}}\"\r\n        },\r\n        \"project\": {\r\n            \"id\": \"{{projectIDMap}}\"\r\n        },\r\n        \"reporter\": {\r\n            \"id\": \"{{accountIDMap}}\"\r\n        },\r\n        \"summary\": \"{{issueTitle}}\"\r\n    },\r\n    \"update\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/issue",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get issue to validate creation of issue Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// check the summary \r",
+									"const response = pm.response.json();\r",
+									"console.log(response.fields.summary);\r",
+									"// Json value check \r",
+									"pm.test(\"Summary match\", function () {\r",
+									"    \r",
+									"    pm.expect(response.fields.summary).to.eql('{{issuetitle}}');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{apitoken}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "korate.shri18@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://korateshri18.atlassian.net/rest/api/3/issue/:issueIdOrKey",
+							"protocol": "https",
+							"host": [
+								"korateshri18",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"api",
+								"3",
+								"issue",
+								":issueIdOrKey"
+							],
+							"variable": [
+								{
+									"key": "issueIdOrKey",
+									"value": "KAN-10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Projects",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.json();\r",
+							"//console.log(response.map((value) => value.name));\r",
+							"\r",
+							"\r",
+							"//console.log(response.values[0].id);\r",
+							"//pm.collectionVariables.set(\"ProjectID\", response.values[0].id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/project/search",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"project",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Using environment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.json();\r",
+							"//console.log(response.map((value) => value.name));\r",
+							"\r",
+							"\r",
+							"//console.log(response.values[0].id);\r",
+							"//pm.collectionVariables.set(\"ProjectID\", response.values[0].id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{jiratoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{hostname}}/rest/api/3/project/search",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"project",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set and get variables for different scopes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.json();\r",
+							"console.log(response.values[0].id);\r",
+							"pm.collectionVariables.set(\"ProjectID\", response.values[0].id)"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.globals.set('globalVar','TestGlobal');\r",
+							"pm.collectionVariables.set('collectionVar','collectionvar123');\r",
+							"pm.environment.set('env var',1234);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/project/search",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"project",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get variables global",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"/*console.clear();\r",
+							"console.log(pm.globals.get(\"test_url\"));*/\r",
+							"\r",
+							"var name=\"RCV Academy\";\r",
+							"console.log(name);\r",
+							"var age=30;\r",
+							"console.log(age);\r",
+							"var isvisible=true;\r",
+							"console.log(isvisible);\r",
+							"let firstname=\"RCV\";\r",
+							"console.log(firstname);\r",
+							"const pi = 3.14;\r",
+							"console.log(pi);\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Validate text\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.maxResults).to.eql(50);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/project/search",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"project",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Issue types for the project",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//const issuetype = pm.response.json();\r",
+							"//console.log(issuetype.map((value) => value.name));\r",
+							"//console.log(issuetype[3].id)\r",
+							"//pm.collectionVariables.set('issuetypeID', issuetype[3].id);\r",
+							"/*for(i=0; i<issuetype.length; i++){\r",
+							"    if(issuetype[i].name == 'Task'){\r",
+							"        pm.collectionVariables.set('issueIDtype',issuetype[i].id)\r",
+							"\r",
+							"    }\r",
+							"    \r",
+							"}*/\r",
+							"issue = pm.response.json();\r",
+							"const issuetypes = issue.map((value) => value.name);\r",
+							"console.log(issuetypes)\r",
+							"console.log(issuetypes.indexOf('Bug'));\r",
+							"pm.collectionVariables.set('issueTypeIDMap',issue[issuetypes.indexOf('Bug')].id);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/issuetype/project?projectId={{ProjectID}}",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"",
+						"rest",
+						"api",
+						"3",
+						"issuetype",
+						"project"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "{{ProjectID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users assignable to project",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const userassignable = pm.response.json();\r",
+							"console.log(userassignable[0].accountId);\r",
+							"pm.collectionVariables.set('userassignableID', userassignable[0].accountId);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/user/assignable/multiProjectSearch?projectKeys=KAN",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"user",
+						"assignable",
+						"multiProjectSearch"
+					],
+					"query": [
+						{
+							"key": "projectKeys",
+							"value": "KAN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create issue",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fields\": {\r\n        \"issuetype\": {\r\n            \"id\": \"10001\"\r\n        },\r\n        \"project\": {\r\n            \"id\": \"10000\"\r\n        },\r\n        \"reporter\": {\r\n            \"id\": \"712020:9d56e271-18ea-4aa2-9909-ed73ab81805f\"\r\n        },\r\n        \"summary\": \"Issue create by postman\"\r\n    },\r\n    \"update\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/issue",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create issue using variables",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fields\": {\r\n        \"issuetype\": {\r\n            \"id\": \"{{issuetypeID}}\"\r\n        },\r\n        \"project\": {\r\n            \"id\": \"{{ProjectID}}\"\r\n        },\r\n        \"reporter\": {\r\n            \"id\": \"{{userassignableID}}\"\r\n        },\r\n        \"summary\": \"Issue create by postman using variables\"\r\n    },\r\n    \"update\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/issue",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create issue 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fields\": {\r\n        \"issuetype\": {\r\n            \"id\": \"10002\"\r\n        },\r\n        \"project\": {\r\n            \"id\": \"10000\"\r\n        },\r\n        \"reporter\": {\r\n            \"id\": \"712020:9d56e271-18ea-4aa2-9909-ed73ab81805f\"\r\n        },\r\n        \"summary\": \"Issue create by postman\"\r\n    },\r\n    \"update\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/issue",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get issue to validate creation of issue",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{apitoken}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "korate.shri18@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://korateshri18.atlassian.net/rest/api/3/issue/:issueIdOrKey",
+					"protocol": "https",
+					"host": [
+						"korateshri18",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"issue",
+						":issueIdOrKey"
+					],
+					"variable": [
+						{
+							"key": "issueIdOrKey",
+							"value": "KAN-2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apitoken",
+			"value": "ATATT3xFfGF07CH8Z1bNl8si1jVBMa2ViSmgh_ud8Rq54mBxsAwHxHZp5zRyphDKAkiZOuzGnn3VJXTjC1EqkWrf5NBXzjEHd_mBH6isUJqrozwig77nynTD6nkmuf8Uy6QeB7SpSYKGCzGcaH9TMHBN58sSTSsthnykVnxgGmA18v89QZxVoJk=8523ABD3"
+		},
+		{
+			"key": "ProjectID",
+			"value": ""
+		},
+		{
+			"key": "issuetypeID",
+			"value": ""
+		},
+		{
+			"key": "userassignableID",
+			"value": ""
+		},
+		{
+			"key": "projectIDMap",
+			"value": ""
+		},
+		{
+			"key": "accountIDMap",
+			"value": ""
+		},
+		{
+			"key": "issueTypeIDMap",
+			"value": ""
+		},
+		{
+			"key": "issueTitle",
+			"value": ""
+		},
+		{
+			"key": "issuecreatedKey",
+			"value": ""
+		},
+		{
+			"key": "createissueKey",
+			"value": ""
+		},
+		{
+			"key": "createdissueKey",
+			"value": ""
+		},
+		{
+			"key": "createdissueID",
+			"value": ""
+		}
+	]
+}

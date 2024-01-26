@@ -1,0 +1,37 @@
+API Token :- 
+
+ATATT3xFfGF07CH8Z1bNl8si1jVBMa2ViSmgh_ud8Rq54mBxsAwHxHZp5zRyphDKAkiZOuzGnn3VJXTjC1EqkWrf5NBXzjEHd_mBH6isUJqrozwig77nynTD6nkmuf8Uy6QeB7SpSYKGCzGcaH9TMHBN58sSTSsthnykVnxgGmA18v89QZxVoJk=8523ABD3
+
+
+This is your url for jira 
+
+https://korateshri18.atlassian.net/jira 
+
+project id - 10000
+task id - 10001
+
+account id - 712020:9d56e271-18ea-4aa2-9909-ed73ab81805f
+
+
+
+
+confluence api documentation :- https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-space/#api-spaces-get
+username :- korate.shri18@gmail.com
+token :- ATATT3xFfGF07CH8Z1bNl8si1jVBMa2ViSmgh_ud8Rq54mBxsAwHxHZp5zRyphDKAkiZOuzGnn3VJXTjC1EqkWrf5NBXzjEHd_mBH6isUJqrozwig77nynTD6nkmuf8Uy6QeB7SpSYKGCzGcaH9TMHBN58sSTSsthnykVnxgGmA18v89QZxVoJk=8523ABD3
+space key :- ~7120209d56e27118ea4aa29909ed73ab81805f
+space id :- 33297
+parent(pages) id :- 33386
+
+
+newman run "C:\Users\Admin\OneDrive\Desktop\NewMan.postman_collection.json"
+-r confluence
+--reporter-confluence-username "korate.shri18@gmail.com"
+--reporter-confluence-password "ATATT3xFfGF07CH8Z1bNl8si1jVBMa2ViSmgh_ud8Rq54mBxsAwHxHZp5zRyphDKAkiZOuzGnn3VJXTjC1EqkWrf5NBXzjEHd_mBH6isUJqrozwig77nynTD6nkmuf8Uy6QeB7SpSYKGCzGcaH9TMHBN58sSTSsthnykVnxgGmA18v89QZxVoJk=8523ABD3"
+--reporter-confluence-baseUrl "https://korateshri18.atlassian.net/wiki"
+--reporter-confluence-version "v2"
+--reporter-confluence-spaceId "~7120209d56e27118ea4aa29909ed73ab81805f"
+--reporter-confluence-parentId "33386"
+
+newman run "C:\Users\Admin\OneDrive\Desktop\NewMan.postman_collection.json" -r confluence --reporter-confluence-username "korate.shri18@gmail.com" --reporter-confluence-password "ATATT3xFfGF07CH8Z1bNl8si1jVBMa2ViSmgh_ud8Rq54mBxsAwHxHZp5zRyphDKAkiZOuzGnn3VJXTjC1EqkWrf5NBXzjEHd_mBH6isUJqrozwig77nynTD6nkmuf8Uy6QeB7SpSYKGCzGcaH9TMHBN58sSTSsthnykVnxgGmA18v89QZxVoJk=8523ABD3" --reporter-confluence-baseUrl "https://korateshri18.atlassian.net/wiki" --reporter-confluence-version "v2" --reporter-confluence-spaceId "~7120209d56e27118ea4aa29909ed73ab81805f" --reporter-confluence-parentId "33386"
+
+ Note:- for using environment request use environment rcvacademylive 
